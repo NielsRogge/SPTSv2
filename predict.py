@@ -130,8 +130,6 @@ def main(args):
 if __name__ == '__main__':
     parser = argparse.ArgumentParser('SPTSv2 yyds', parents=[get_args_parser()])
     args = parser.parse_args()
-    args.img_path = 'IMG/0000245.jpg'
-    args.resume = 'your_weight_path'
     args.pre_norm = True
     args.pad_rec = True
     main(args)
